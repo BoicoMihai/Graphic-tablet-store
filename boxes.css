@@ -1,0 +1,57 @@
+.containerboxes{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    align-items: center;
+}
+
+.containerboxes img{
+    margin: 20px;
+    background-color: rgb(13, 13, 13);   
+    border-radius: 15%;
+    border: 1.5px solid rgba(6, 66, 66, 0.81);
+    transform: scale(1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#p1{
+    width: 300px;
+    height: 230px;
+    object-fit: cover;
+}
+
+#p2{
+    width: 300px;
+    height: 230px;
+    object-fit: cover;
+}
+
+#p3{
+    width: 300px;
+    height: 230px;
+    object-fit: cover;
+}
+
+#p4{
+    width: 300px;
+    height: 230px;
+    object-fit: cover;  
+}
+
+.containerboxes img::before {
+  background: linear-gradient(
+    rgba(0,255,255,0.3)
+  );
+}
+
+.containerboxes img:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 20px rgba(0,255,255,0.5);
+}
+
+.containerboxes img:active{ 
+  transform: scale(0.95);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}

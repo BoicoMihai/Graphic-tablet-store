@@ -1,2 +1,2 @@
-# Graphic-tablet-store
-A store for graphic tablets and other similar equipment/accesories
+# Landing-page-for-graphic-tablet-online-store
+Landing page for graphic tablet online store
