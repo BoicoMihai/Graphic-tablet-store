@@ -1,5 +1,12 @@
 body {
     background-color: black;
-    margin-top: 50px;
     height: 100%;
+}
+
+.hr{
+    height: 2px;
+    margin: 40px auto;
+    background-image: linear-gradient(90deg, #000 0%, #fff 50%, #000 100%);
+    display: block;
+    border: none;
 }

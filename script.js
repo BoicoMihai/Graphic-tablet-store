@@ -22,7 +22,7 @@ function slideShow(){
 
 function resetInterval(){
     clearInterval(interval)
-    interval = setInterval(run, 3500)
+    interval = setInterval(run, 5500)
 }
 
 nextBtn.addEventListener('click', ()=>{
