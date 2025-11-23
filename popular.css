@@ -4,3 +4,17 @@
     align-items: center;
     padding: 80px;
 }
+
+.popular img{
+    height: 600px;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
+    box-reflect: below 0px linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
+
+}
+
+.ptext h1{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    font-size: 100px;
+}

@@ -1,22 +1,55 @@
 @font-face {
     font-family: font;
-    src: url(fonts/TASAExplorer-VariableFont_wght.ttf);
+    src: url(fonts/Chopin-Light.ttf);
 }
 
-h1{
+h1 {
     font-family: font;
     color: rgb(255, 255, 255);
     margin: 20px;
     padding: 20px;
-    font-size: 24px;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
 }
 
-.header{
+.header h1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transition: transform 0.25s ease-out;
+  transform-origin: bottom center;
+}
+
+.header h1:hover::after {
+  transform: scaleX(1);
+}
+
+.header {
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    background-color: rgb(22, 22, 22);
+    flex-direction: row; 
     border-radius: 5px;
     height: 65px;
     align-items: center;
+    z-index: 1000;
+}
+
+
+.logo img {
+    height: 50px;
+}
+
+.logo h1 {
+    margin: 0;
+    padding: 0;
+    top: 15px;
+    right: 51px;
+    font-size: 18px;
 }
