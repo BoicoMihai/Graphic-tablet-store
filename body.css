@@ -10,3 +10,37 @@ body {
     display: block;
     border: none;
 }
+
+.image-container_2 img{
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+.image-container_2 {
+    position: relative; /* Needed for absolute positioning of pseudo-elements */
+    display: inline-block; /* Or use width/height definitions */
+    margin-top: 100px;
+}
+
+.image-container_2::before,
+.image-container_2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100px; /* Adjust height as needed */
+    pointer-events: none; /* Allows clicks to pass through to the image/content below */
+}
+
+.image-container_2::before {
+    top: 0;
+    /* Gradient from transparent at the top to black (or background color) at the bottom */
+    background: linear-gradient(to bottom, rgb(13, 13, 13), transparent);
+}
+
+.image-container_2::after {
+    bottom: 0;
+    /* Gradient from transparent at the top to black (or background color) at the bottom */
+    background: linear-gradient(to top,rgb(13, 13, 13), transparent);
+}

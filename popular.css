@@ -1,15 +1,80 @@
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5 ;
+    } to {
+        opacity: 1;
+        scale: 1;   
+    }
+}
+
 .popular{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 80px;
+    position: relative;
+    gap: 50px;
+}
+
+.popular-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    position: relative;
 }
 
 .popular img{
-    height: 600px;
+    height: 550px;
     -webkit-box-reflect: below 0px linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
     box-reflect: below 0px linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
 
+.popular:hover img{
+    transform: translateX(-150px);
+}
+
+.product-details {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    color: white;
+    max-width: 400px;
+    pointer-events: none;
+}
+
+.popular:hover .product-details {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.product-details h2 {
+    font-family: font;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    
+}
+
+.product-details h3 {
+    font-family: font;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.ptext {
+    position: relative;
+    overflow: hidden;
+     animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 
 .ptext h1{
@@ -17,4 +82,15 @@
     align-items: center;
     justify-self: center;
     font-size: 100px;
+    color: white;
+    
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 200% center;
+    }
 }
