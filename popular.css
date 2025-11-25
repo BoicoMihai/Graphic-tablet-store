@@ -94,3 +94,16 @@
         background-position: 200% center;
     }
 }
+
+.buyb{
+    background: linear-gradient(90deg, #2f7fad, #0077cc);
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: font;
+    display: flex;
+}
