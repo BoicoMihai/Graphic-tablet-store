@@ -25,14 +25,8 @@ function resetInterval(){
     interval = setInterval(run, 5500)
 }
 
-nextBtn.addEventListener('click', ()=>{
-    idx++
-    slideShow()
-    resetInterval()
-})
+const button = document.getElementById('buyb');
+    button.addEventListener('click', function(){
+       console.log("Hello World"); 
+    });
 
-preBtn.addEventListener('click', ()=>{
-    idx--
-    slideShow()
-    resetInterval()
-})
