@@ -1,12 +1,8 @@
 const content = {
     title: "The best website ever",
-    
+
     ImageLinks: [
         "images/AEON LOGO MARK - 2025.svg",
-        "images/pen.png",
-        "images/stand.png",
-        "images/image-removebg-preview.png",
-        "images/drawing-tablet.png",
         "images/AEON LOGO MARK - 2025.svg",
         "images/Illustration2.png",
         "images/roaster-main01.webp",
@@ -16,6 +12,17 @@ const content = {
         "images/img2.jpg",
         "images/img3.jpg",
         "images/img4.jpg",
+    ],
+
+    ContainerBoxes: [
+        "images/pen.png",
+        "images/stand.png",
+        "images/image-removebg-preview.png",
+        "images/drawing-tablet.png",
+    ],
+    
+    hr: [
+
     ],
 
     Links: [
@@ -33,7 +40,6 @@ const content = {
         {name: "Support", link: "#", class: "navbar"},
         {name: "Contact", link: "#", class: "navbar"},
     ],
-
 };
 
 document.title = content.title;
@@ -69,7 +75,7 @@ const imageContainer = document.createElement("div");
 
 for(let i = 0; i < content.ImageContainerLinks.length; i++){
     const image = document.createElement("img");
-    image.setAttribute("src", content.ImageContainerLinks[i]);
+    image.src = content.ImageContainerLinks[i];
     imageContainer.appendChild(image);
 }
 
@@ -81,5 +87,18 @@ imageContainer.id = "imgs";
 
 body.appendChild(Header);
 body.appendChild(hr);
+body.appendChild(slideshow);
+
+const containerBoxes = document.createElement("section");
+containerBoxes.className = "containerboxes";
+
+body.appendChild(containerBoxes);
+
+for(let i = 0; i < content.ContainerBoxes.length; i++){
+    const image = document.createElement("img");
+    image.src = content.ContainerBoxes[i];
+    image.id = `p${i+1}`;
+    containerBoxes.appendChild(image);
+}
 
 console.log(content);
