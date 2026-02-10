@@ -1,6 +1,4 @@
 const imgs = document.getElementById('imgs')
-const preBtn = document.getElementById('pre')
-const nxtBtn = document.getElementById('next')
 
 const img = document.querySelectorAll('#imgs img')
 let idx = 0
@@ -24,9 +22,3 @@ function resetInterval(){
     clearInterval(interval)
     interval = setInterval(run, 5500)
 }
-
-const button = document.getElementById('buyb');
-    button.addEventListener('click', function(){
-       console.log("Hello World"); 
-    });
-

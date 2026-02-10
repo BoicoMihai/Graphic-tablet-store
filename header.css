@@ -3,7 +3,7 @@
     src: url(fonts/Chopin-Light.ttf);
 }
 
-h1 {
+.navbar {
     font-family: font;
     color: rgb(255, 255, 255);
     margin: 20px;
@@ -12,9 +12,23 @@ h1 {
     position: relative;
     display: inline-block;
     cursor: pointer;
+    background: none;
+    border: none;
 }
 
-.header h1::after {
+h1{
+    font-family: font;
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.navbar::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -27,7 +41,7 @@ h1 {
   transform-origin: bottom center;
 }
 
-.header h1:hover::after {
+.navbar:hover::after {
   transform: scaleX(1);
 }
 
