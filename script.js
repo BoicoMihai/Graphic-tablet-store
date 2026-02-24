@@ -22,3 +22,17 @@ function resetInterval(){
     clearInterval(interval)
     interval = setInterval(run, 5500)
 }
+
+const button = document.getElementById("Button");
+const textBar = document.getElementById("Text-bar");
+let text = document.getElementById("text");
+
+button.addEventListener("click", function() {
+    const content = textBar.value;
+
+    if(content != ""){
+        alert(`User input: "${content}"`);
+        console.log(content);
+        text.innerHTML = content;
+    }   
+});
