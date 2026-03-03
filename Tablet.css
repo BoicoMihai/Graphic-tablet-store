@@ -1,0 +1,19 @@
+#container-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#add-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
