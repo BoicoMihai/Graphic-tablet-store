@@ -11,9 +11,7 @@
 .popular{
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 80px;
-    position: relative;
     gap: 50px;
 }
 
@@ -26,17 +24,13 @@
 
 .popular img{
     height: 550px;
-    -webkit-box-reflect: below 0px linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
-    box-reflect: below 0px linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
-    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-box-reflect: b 0px linear-gradient(transparent);
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 20%;
 }
 
 .popular:hover img{
-    transform: translateX(-150px);
+    transform: translateX(-120px);
 }
 
 .product-details {
