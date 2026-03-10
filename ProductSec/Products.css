@@ -25,7 +25,7 @@ body {
     margin-right: 10px;
 }
 
-.input-box{
+#input-box{
     font-family: font;
     color: white;
     border: none;
@@ -59,10 +59,16 @@ body {
     background: none;
     border: none;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 #search-img-button {
     background: none;
     border: none;
     cursor: pointer;
+}
+
+#button1:hover, #button2:hover {
+    transform: scale(1.2);
+    filter: invert(0.2);
 }
