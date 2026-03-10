@@ -9,13 +9,14 @@ body {
 }
 
 .search{
-    margin-top: 20px;
     display: flex;
     align-items: center;
+    margin-top: 10px;
     padding: 14px;
     border-radius: 30px;
     background: rgb(41, 41, 41);
     width: max-content;
+    height: 20px;  
 }
 
 .search-image{
@@ -35,8 +36,33 @@ body {
 }
 
 .header{
-    background-color: rgb(22, 22, 22);
+    margin-top: 20px;
+    background-color: rgb(61, 61, 61);
     display: flex;  
+    flex-direction: row;
     justify-content: center;
-    border-radius: 30px;
+    justify-self: center;
+    border-radius: 40px;
+    height: 70px;
+    width: max-content;
+    padding: 0px 20px;
+}
+
+.Saved-items, .Cart-image{
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
+
+#button1, #button2 {
+    margin-left: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#search-img-button {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
