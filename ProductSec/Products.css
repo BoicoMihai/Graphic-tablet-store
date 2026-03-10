@@ -3,30 +3,40 @@ body {
     height: 100%;
 }
 
-.Header{
-    position: relative;
+@font-face {
+    font-family: font;
+    src: url(fonts/Chopin-Light.ttf);
 }
 
-.container{
-    width: 350px;
-    height: 30px;
+.search{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border-radius: 30px;
+    background: rgb(41, 41, 41);
+    width: max-content;
 }
 
-.InputBox {
-    position: absolute;
-    width: 300px;
+.search-image{
+    width: 20px;
     height: 20px;
-    border-radius: 5px;
-    border: none;
-    font-size: 15px;
-    box-sizing: border-box;
+    margin-right: 10px;
 }
 
-#SearchImg{
-    position: relative;
-    left: 5px;
-    top: 9px;
-    transform: translateY(-50%);
-    width: 15px; /* Adjusted size */
-    pointer-events: none; /* Prevent interfering with input clicks */
+.input-box{
+    font-family: font;
+    color: white;
+    border: none;
+    font-size: 20px;
+    margin-left: 14px;
+    outline: none;
+    background: transparent;
+}
+
+.header{
+    background-color: rgb(22, 22, 22);
+    display: flex;  
+    justify-content: center;
+    border-radius: 30px;
 }
