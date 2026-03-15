@@ -1,14 +1,10 @@
-const SearchBar = document.getElementById("input-box");
-const Content = SearchBar.value;
+const InputBox = document.getElementById("input-box");
 
-localStorage.setItem("Content", JSON.stringify(Content));
-
-window.addEventListener("load", function() {
-    let SavedContent = JSON.parse(localStorage.getItem("Content"));
-    if (SavedContent) {
-        SearchBar.value = SavedContent;
-    }
+const saved = JSON.parse(localStorage.getItem("Content"));
+if (saved !== null) {
+  InputBox.value = saved;
+}
+ 
+InputBox.addEventListener("input", () => {
+  localStorage.setItem("Content", JSON.stringify(InputBox.value));
 });
-
-
-
