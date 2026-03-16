@@ -117,6 +117,49 @@ body {
 #Company-Name{
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 20px;
+}
+
+#Filter-Button, #Browse-Button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 40px;  
+}
+
+#FilterImg, #BrowseImg {
+    width: 30px;
+    height: 30px;
+    filter: invert(0.5);
+}
+
+#Sidebar-Categories {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#Filter-Button:hover, #Browse-Button:hover {
+    color: white;
+}
+
+#Filter-Button:hover, #Browse-Button:hover {
+    color: white;
+}
+
+.Sidebar-main-text{
+    font-family: font;
+    margin-left: 10px;
+    font-size: 15px;
+    color: rgba(124, 124, 124);
+}
+
+br{
+    line-height: 20px;
+    color: white;
 }
